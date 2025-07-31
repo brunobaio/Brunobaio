@@ -44,7 +44,7 @@ Atualmente sem projetos públicos, mas em breve adicionarei sistemas e aplicaç�
 ## 📬 Contato
 
 - ✉️ Email: [brunobaio65@gmail.com](mailto:brunobaio65@gmail.com)  
-- 💼 LinkedIn: [linkedin.com/in/brunobaio](https://www.linkedin.com/in/brunobaio)  
+- 💼 LinkedIn: [linkedin.com/in/brunobaio](https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile)  
 - 💻 GitHub: [github.com/brunobaio](https://github.com/brunobaio)
 
 ---
