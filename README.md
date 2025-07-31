@@ -2,7 +2,7 @@
 
 Desenvolvedor de Sistemas apaixonado por tecnologia e soluções inteligentes.
 
-![Foto de Perfil](sua-foto.jpg)
+![Foto de Perfil](perfil1.jpg)
 
 ## 📌 Sobre Mim
 
