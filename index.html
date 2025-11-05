@@ -1,15 +1,233 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio | Bruno Henrique Baio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Bruno Henrique Baio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #6a0dad;
+    }
+
+    header p {
+      color: #bfbfbf;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 2rem auto 1rem;
+      border: 3px solid #6a0dad;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      color: #bfbfbf;
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #6a0dad;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      background: #1a1a1a;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(106, 13, 173, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 25px rgba(106, 13, 173, 0.3);
+    }
+
+    h2 {
+      color: #6a0dad;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+
+    a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #111;
+      color: #777;
+      margin-top: 2rem;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bruno Henrique Baio</h1>
+    <p>Desenvolvedor de Sistemas</p>
+    <div class="profile-pic">
+      <img src="perfil1.jpg" alt="Foto de perfil">
+    </div>
+
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#formacao">Formação</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Sou técnico em Desenvolvimento de Sistemas formado pela ETEC Elias Nechar. Tenho facilidade em aprender novas tecnologias, sou organizado, comunicativo e apaixonado por tecnologia. Busco aplicar meus conhecimentos para resolver problemas e criar soluções funcionais. Atualmente, estou me aprimorando em desenvolvimento web e sistemas embarcados.</p>
+    </section>
+
+    <section id="formacao">
+      <h2>Formação Acadêmica</h2>
+      <p>ETEC Elias Nechar – Técnico em Desenvolvimento de Sistemas (2024)</p>
+    </section>
+
+    <section>
+      <h2>Cursos</h2>
+      <ul>
+        <li>Curso “O que é Git e GitHub” – 2h (28/05/2024)</li>
+        <li>Curso ministrado “Introdução ao Arduino” – 2h (15/05 a 16/05/2024)</li>
+      </ul>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades Técnicas</h2>
+      <ul>
+        <li>PHP, HTML, Python, Arduino</li>
+        <li>Git e GitHub (básico)</li>
+        <li>Conhecimento em PyCharm</li>
+        <li>VS Code, Arduino IDE</li>
+        <li>Pacote Office, Windows</li>
+        <li>Design básico com Canva</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Competências Pessoais</h2>
+      <ul>
+        <li>Boa comunicação e atendimento ao público</li>
+        <li>Organização e responsabilidade</li>
+        <li>Facilidade de aprendizado</li>
+      </ul>
+    </section>
+
+    <section id="projetos">
+      <h2>Trabalhos e Projetos</h2>
+      <p>Em breve, estarei adicionando projetos desenvolvidos em HTML, PHP e Arduino.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Email: <a href="mailto:brunobaio65@gmail.com">brunobaio65@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/brunobaio" target="_blank">github.com/brunobaio</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/brunobaio" target="_blank">linkedin.com/in/brunobaio</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Bruno Henrique Baio. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Animação de fade suave nas seções ao rolar
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = "translateY(0)";
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      section.style.opacity = 0;
+      section.style.transform = "translateY(20px)";
+      section.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+      observer.observe(section);
+    });
+  </script>
+
+</body>
 </html>
+
