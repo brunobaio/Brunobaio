@@ -35,10 +35,11 @@ Atualmente focado em desenvolvimento web e sistemas embarcados com Arduino.
 ---
 
 ## 💼 Trabalhos Feitos
+Aplicativo desenvolvido para converter números entre os sistemas binário, decimal, octal e hexadecimal de forma rápida e intuitiva.
+https://github.com/brunobaio/ConversaoAppPython
 
-Atualmente sem projetos públicos, mas em breve adicionarei sistemas e aplicações desenvolvidas com PHP, HTML e Arduino.
-
----
+Jogo desenvolvido em JavaScript no qual o jogador deve adivinhar um número secreto por meio de tentativas e dicas fornecidas pelo sistema.
+https://github.com/brunobaio/JogodoNumeroSecreto
 
 ## 📬 Contato
 
