@@ -1,254 +1,938 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio | Bruno Henrique Baio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-      scroll-behavior: smooth;
-    }
 
-    body {
-      background-color: #0d0d0d;
-      color: #ffffff;
-      line-height: 1.6;
-    }
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-    header {
-      text-align: center;
-      padding: 4rem 1rem 2rem;
-      border-bottom: 1px solid #222;
-    }
+  <meta
+    name="description"
+    content="Portfólio de Bruno Henrique Baio - Estudante de Engenharia de Software e Desenvolvedor."
+  >
 
-    header h1 {
-      font-size: 2.8rem;
-      color: #6a0dad;
-    }
+  <title>Bruno Henrique Baio | Portfólio</title>
 
-    header p {
-      color: #bfbfbf;
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: 2rem auto 1rem;
-      border: 3px solid #6a0dad;
-      transition: transform 0.3s ease;
-    }
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
-    .profile-pic:hover {
-      transform: scale(1.05);
-    }
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
-    .profile-pic img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    nav {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    nav a {
-      color: #bfbfbf;
-      margin: 0 1rem;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #6a0dad;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
-
-    section {
-      background: #1a1a1a;
-      margin-bottom: 2rem;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(106, 13, 173, 0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    section:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 0 25px rgba(106, 13, 173, 0.3);
-    }
-
-    h2 {
-      color: #6a0dad;
-      margin-bottom: 1rem;
-      font-size: 1.8rem;
-    }
-
-    ul {
-      list-style-type: square;
-      padding-left: 1.5rem;
-    }
-
-    a {
-      color: #00bfff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background: #111;
-      color: #777;
-      margin-top: 2rem;
-    }
-
-    /* Responsividade */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      section {
-        padding: 1.2rem;
-      }
-    }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+  <!-- =========================
+       HEADER
+  ========================== -->
+
   <header>
-    <h1>Bruno Henrique Baio</h1>
-    <p>Desenvolvedor de Sistemas</p>
+
     <div class="profile-pic">
-      <img src="perfil1.png" alt="Foto de perfil">
+
+      <img
+        src="perfil.png"
+        alt="Foto Bruno Henrique Baio"
+      >
+
     </div>
 
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#formacao">Formação</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-    </nav>
+
+    <h1>
+      Bruno Henrique <span>Baio</span>
+    </h1>
+
+
+    <p class="cargo">
+      Estudante de Engenharia de Software
+    </p>
+
+
+    <p class="descricao-header">
+      Desenvolvimento de Software • Python • JavaScript • Tecnologia
+    </p>
+
+
+    <div class="header-botoes">
+
+      <a
+        href="#projetos"
+        class="btn btn-principal"
+      >
+        Ver Projetos
+      </a>
+
+
+      <a
+        href="#contato"
+        class="btn btn-secundario"
+      >
+        Contato
+      </a>
+
+    </div>
+
   </header>
 
 
-  <div class="container">
-    <section id="sobre">
-      <h2>Sobre Mim</h2>
-      <p>Sou técnico em Desenvolvimento de Sistemas formado pela ETEC Elias Nechar. Tenho facilidade em aprender novas tecnologias, sou organizado, comunicativo e apaixonado por tecnologia. Busco aplicar meus conhecimentos para resolver problemas e criar soluções funcionais. Atualmente, estou me aprimorando em desenvolvimento web e sistemas embarcados.</p>
-    </section>
+  <!-- =========================
+       MENU
+  ========================== -->
 
-    <section id="formacao">
-      <h2>Formação Acadêmica</h2>
-      <p>ETEC Elias Nechar – Técnico em Desenvolvimento de Sistemas (2024)</p>
-    </section>
+  <nav>
 
-    <section>
-      <h2>Cursos</h2>
-      <ul>
-        <li>Curso “O que é Git e GitHub” – 2h (28/05/2024)</li>
-        <li>Curso ministrado “Introdução ao Arduino” – 2h (15/05 a 16/05/2024)</li>
-      </ul>
-    </section>
-
-    <section id="habilidades">
-      <h2>Habilidades Técnicas</h2>
-      <ul>
-        <li>PHP, HTML, Python, Arduino</li>
-        <li>Git e GitHub (básico)</li>
-        <li>Conhecimento em PyCharm</li>
-        <li>VS Code, Arduino IDE</li>
-        <li>Pacote Office, Windows</li>
-        <li>Design básico com Canva</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Competências Pessoais</h2>
-      <ul>
-        <li>Boa comunicação e atendimento ao público</li>
-        <li>Organização e responsabilidade</li>
-        <li>Facilidade de aprendizado</li>
-      </ul>
-    </section>
-
-   <section id="projetos">
-  <h2>Trabalhos e Projetos</h2>
-
-  <h3>Conversão de Números</h3>
-  <p>
-    Aplicativo desenvolvido em Python para converter números entre os sistemas
-    binário, decimal, octal e hexadecimal.
-  </p>
-  <p>
-    <a href="https://github.com/brunobaio/ConversaoAppPython.git" target="_blank">
-      Ver projeto no GitHub
+    <a href="#sobre">
+      Sobre
     </a>
-  </p>
 
-  <h3>Jogo do Número Secreto</h3>
-  <p>
-    Jogo desenvolvido em JavaScript no qual o jogador deve adivinhar um número
-    secreto por meio de dicas fornecidas pelo sistema.
-  </p>
-  <p>
-    <a href="https://github.com/brunobaio/JogodoNumeroSecreto" target="_blank">
-      Ver projeto no GitHub
+    <a href="#formacao">
+      Formação
     </a>
-  </p>
-</section>
-<section id="contato">
-      <h2>Contato</h2>
-      <p>Email: <a href="mailto:brunobaio65@gmail.com">brunobaio65@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/brunobaio" target="_blank">github.com/brunobaio</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/public-profile/settings? trk=d_flagship3_profile_self_view_public_profile" target="_blank">linkedin.com/in/brunobaio</a></p>
+
+    <a href="#cursos">
+      Cursos
+    </a>
+
+    <a href="#habilidades">
+      Tecnologias
+    </a>
+
+    <a href="#projetos">
+      Projetos
+    </a>
+
+    <a href="#experiencia">
+      Experiência
+    </a>
+
+    <a href="#contato">
+      Contato
+    </a>
+
+  </nav>
+
+
+  <!-- =========================
+       CONTEÚDO PRINCIPAL
+  ========================== -->
+
+  <main class="container">
+
+
+    <!-- =========================
+         SOBRE
+    ========================== -->
+
+    <section
+      id="sobre"
+      class="reveal"
+    >
+
+      <h2>
+        Sobre Mim
+      </h2>
+
+
+      <p>
+        Sou estudante de Engenharia de Software e
+        Técnico em Desenvolvimento de Sistemas,
+        com interesse em desenvolvimento de software,
+        programação e tecnologia.
+      </p>
+
+
+      <p>
+        Tenho experiência acadêmica e prática
+        utilizando tecnologias como Python,
+        JavaScript, HTML, CSS, PHP, C++,
+        Arduino e banco de dados.
+      </p>
+
+
+      <p>
+        Busco constantemente desenvolver novos
+        projetos, aprimorar meus conhecimentos
+        e conquistar oportunidades profissionais
+        na área de tecnologia.
+      </p>
+
     </section>
-  </div>
+
+
+    <!-- =========================
+         FORMAÇÃO
+    ========================== -->
+
+    <section
+      id="formacao"
+      class="reveal"
+    >
+
+      <h2>
+        Formação Acadêmica
+      </h2>
+
+
+      <div class="grid">
+
+
+        <!-- ENGENHARIA -->
+
+        <div class="card">
+
+          <h3>
+            Engenharia de Software
+          </h3>
+
+          <p>
+            Bacharelado em Engenharia de Software
+          </p>
+
+          <p>
+            Anhanguera
+          </p>
+
+          <span class="status">
+            Em andamento
+          </span>
+
+        </div>
+
+
+        <!-- TÉCNICO -->
+
+        <div class="card">
+
+          <h3>
+            Técnico em Desenvolvimento de Sistemas
+          </h3>
+
+          <p>
+            ETEC Elias Nechar
+          </p>
+
+          <span class="status concluido">
+            Concluído em 2024
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CURSOS E CERTIFICAÇÕES
+    ========================== -->
+
+    <section
+      id="cursos"
+      class="reveal"
+    >
+
+      <h2>
+        Cursos e Certificações
+      </h2>
+
+
+      <p class="section-description">
+        Cursos realizados para aprimorar meus conhecimentos
+        em programação, desenvolvimento de software,
+        versionamento e carreira em tecnologia.
+      </p>
+
+
+      <div class="grid">
+
+
+        <!-- ALURA 1 -->
+
+        <div class="card curso-card">
+
+          <span class="curso-plataforma">
+            Alura
+          </span>
+
+          <h3>
+            Iniciante em Programação
+          </h3>
+
+          <p>
+            Formação voltada para os fundamentos
+            da programação, lógica e desenvolvimento
+            de aplicações.
+          </p>
+
+        </div>
+
+
+        <!-- ALURA 2 -->
+
+        <div class="card curso-card">
+
+          <span class="curso-plataforma">
+            Alura
+          </span>
+
+          <h3>
+            Lógica de Programação
+          </h3>
+
+          <p>
+            Desenvolvimento dos principais conceitos
+            de lógica de programação, variáveis,
+            condições, funções e resolução de problemas.
+          </p>
+
+        </div>
+
+
+        <!-- ALURA 3 -->
+
+        <div class="card curso-card">
+
+          <span class="curso-plataforma">
+            Alura
+          </span>
+
+          <h3>
+            Lógica de Programação:
+            Mergulhe em Programação com JavaScript
+          </h3>
+
+          <p>
+            Curso focado no desenvolvimento de lógica
+            utilizando JavaScript e na criação
+            de aplicações interativas.
+          </p>
+
+        </div>
+
+
+        <!-- ALURA 4 -->
+
+        <div class="card curso-card">
+
+          <span class="curso-plataforma">
+            Alura
+          </span>
+
+          <h3>
+            Git e GitHub
+          </h3>
+
+          <p>
+            Conceitos de controle de versão,
+            criação de repositórios, commits,
+            histórico de alterações e publicação
+            de projetos no GitHub.
+          </p>
+
+        </div>
+
+
+        <!-- ALURA 5 -->
+
+        <div class="card curso-card">
+
+          <span class="curso-plataforma">
+            Alura
+          </span>
+
+          <h3>
+            Começando em Programação:
+            Carreira e Primeiros Passos
+          </h3>
+
+          <p>
+            Curso sobre os primeiros passos
+            na carreira de desenvolvimento,
+            aprendizado em tecnologia e preparação
+            para o mercado de trabalho.
+          </p>
+
+        </div>
+
+
+        <!-- ARDUINO -->
+
+        <div class="card curso-card">
+
+          <span class="curso-plataforma">
+            ETEC Elias Nechar
+          </span>
+
+          <h3>
+            Introdução ao Arduino
+          </h3>
+
+          <p>
+            Curso de Arduino básico ministrado
+            na ETEC Elias Nechar, abordando
+            programação, componentes eletrônicos
+            e projetos utilizando Arduino.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         TECNOLOGIAS
+    ========================== -->
+
+    <section
+      id="habilidades"
+      class="reveal"
+    >
+
+      <h2>
+        Tecnologias
+      </h2>
+
+
+      <!-- WEB -->
+
+      <h3 class="categoria">
+        Desenvolvimento Web
+      </h3>
+
+
+      <div class="skills">
+
+        <span class="skill">
+          HTML5
+        </span>
+
+        <span class="skill">
+          CSS3
+        </span>
+
+        <span class="skill">
+          JavaScript
+        </span>
+
+      </div>
+
+
+      <!-- LINGUAGENS -->
+
+      <h3 class="categoria">
+        Linguagens
+      </h3>
+
+
+      <div class="skills">
+
+        <span class="skill">
+          Python
+        </span>
+
+        <span class="skill">
+          PHP
+        </span>
+
+        <span class="skill">
+          C++
+        </span>
+
+      </div>
+
+
+      <!-- BANCO -->
+
+      <h3 class="categoria">
+        Banco de Dados
+      </h3>
+
+
+      <div class="skills">
+
+        <span class="skill">
+          SQLite
+        </span>
+
+      </div>
+
+
+      <!-- VERSIONAMENTO -->
+
+      <h3 class="categoria">
+        Versionamento
+      </h3>
+
+
+      <div class="skills">
+
+        <span class="skill">
+          Git
+        </span>
+
+        <span class="skill">
+          GitHub
+        </span>
+
+      </div>
+
+
+      <!-- FERRAMENTAS -->
+
+      <h3 class="categoria">
+        Ferramentas
+      </h3>
+
+
+      <div class="skills">
+
+        <span class="skill">
+          VS Code
+        </span>
+
+        <span class="skill">
+          PyCharm
+        </span>
+
+        <span class="skill">
+          Arduino IDE
+        </span>
+
+        <span class="skill">
+          MIT App Inventor
+        </span>
+
+        <span class="skill">
+          Windows
+        </span>
+
+        <span class="skill">
+          Linux
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJETOS
+    ========================== -->
+
+    <section
+      id="projetos"
+      class="reveal"
+    >
+
+      <h2>
+        Projetos
+      </h2>
+
+
+      <p class="section-description">
+        Alguns projetos desenvolvidos durante
+        meus estudos e aprendizado em programação.
+      </p>
+
+
+      <div class="grid projetos-grid">
+
+
+        <!-- PROJETO 1 -->
+
+        <article class="card projeto-card">
+
+          <span class="projeto-numero">
+            01
+          </span>
+
+          <h3>
+            Conversor de Bases Numéricas
+          </h3>
+
+          <p>
+            Aplicação desenvolvida em Python
+            para realizar conversões entre
+            números binários, decimais,
+            hexadecimais e octais.
+          </p>
+
+
+          <div class="projeto-tecnologias">
+
+            <span>
+              Python
+            </span>
+
+            <span>
+              Lógica
+            </span>
+
+          </div>
+
+
+          <div class="projeto-links">
+
+            <a
+              href="https://github.com/brunobaio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- PROJETO 2 -->
+
+        <article class="card projeto-card">
+
+          <span class="projeto-numero">
+            02
+          </span>
+
+          <h3>
+            Amigo Secreto
+          </h3>
+
+          <p>
+            Aplicação web para cadastro,
+            remoção e sorteio de participantes
+            utilizando manipulação do DOM
+            e lógica com JavaScript.
+          </p>
+
+
+          <div class="projeto-tecnologias">
+
+            <span>
+              HTML
+            </span>
+
+            <span>
+              CSS
+            </span>
+
+            <span>
+              JavaScript
+            </span>
+
+          </div>
+
+
+          <div class="projeto-links">
+
+            <a
+              href="https://github.com/brunobaio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- PROJETO 3 -->
+
+        <article class="card projeto-card">
+
+          <span class="projeto-numero">
+            03
+          </span>
+
+          <h3>
+            Humidificador Automático
+          </h3>
+
+          <p>
+            Sistema desenvolvido com Arduino
+            para monitoramento de temperatura
+            e umidade utilizando o sensor DHT22.
+          </p>
+
+          <p>
+            O sistema controla um relé e LEDs
+            e transmite os dados via Bluetooth
+            para um aplicativo desenvolvido
+            no MIT App Inventor.
+          </p>
+
+
+          <div class="projeto-tecnologias">
+
+            <span>
+              Arduino
+            </span>
+
+            <span>
+              C++
+            </span>
+
+            <span>
+              Bluetooth
+            </span>
+
+            <span>
+              DHT22
+            </span>
+
+            <span>
+              MIT App Inventor
+            </span>
+
+          </div>
+
+
+          <div class="projeto-links">
+
+            <a
+              href="https://github.com/brunobaio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub →
+            </a>
+
+          </div>
+
+  
+
+    </section>
+
+
+    <!-- =========================
+         COMPETÊNCIAS
+    ========================== -->
+
+    <section class="reveal">
+
+      <h2>
+        Competências
+      </h2>
+
+
+      <div class="grid">
+
+
+        <div class="card">
+
+          <h3>
+            Resolução de Problemas
+          </h3>
+
+          <p>
+            Facilidade com lógica,
+            análise de problemas e busca
+            por soluções.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <h3>
+            Aprendizado
+          </h3>
+
+          <p>
+            Interesse constante em aprender
+            novas tecnologias e ferramentas.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <h3>
+            Organização
+          </h3>
+
+          <p>
+            Organização, responsabilidade
+            e atenção aos detalhes.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <h3>
+            Comunicação
+          </h3>
+
+          <p>
+            Boa comunicação e experiência
+            com atendimento ao público.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTATO
+    ========================== -->
+
+    <section
+      id="contato"
+      class="reveal"
+    >
+
+      <h2>
+        Entre em Contato
+      </h2>
+
+
+      <p class="contato-intro">
+        Estou aberto a oportunidades na área
+        de tecnologia, desenvolvimento de software
+        e novos projetos. Você pode entrar
+        em contato comigo pelos canais abaixo.
+      </p>
+
+
+      <div class="contato-grid">
+
+
+        <!-- EMAIL -->
+
+        <a
+          href="mailto:brunobaio65@gmail.com"
+          class="contato-card"
+        >
+
+          <div class="contato-icon">
+            ✉
+          </div>
+
+
+          <div>
+
+            <h3>
+              E-mail
+            </h3>
+
+            <p>
+              brunobaio65@gmail.com
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <!-- LINKEDIN -->
+
+        <a
+          href="https://www.linkedin.com/in/bruno-henrique-baio-215152303/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contato-card"
+        >
+
+          <div class="contato-icon">
+            in
+          </div>
+
+
+          <div>
+
+            <h3>
+              LinkedIn
+            </h3>
+
+            <p>
+              Bruno Henrique Baio
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <!-- GITHUB -->
+
+        <a
+          href="https://github.com/brunobaio"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contato-card"
+        >
+
+          <div class="contato-icon">
+            &lt;/&gt;
+          </div>
+
+
+          <div>
+
+            <h3>
+              GitHub
+            </h3>
+
+            <p>
+              @brunobaio
+            </p>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
   <footer>
-    <p>&copy; 2025 Bruno Henrique Baio. Todos os direitos reservados.</p>
+
+    <p>
+      © 2026 Bruno Henrique Baio
+    </p>
+
+    <p>
+      Desenvolvido com HTML, CSS e JavaScript
+    </p>
+
   </footer>
 
-  <script>
-    // Animação de fade suave nas seções ao rolar
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = 1;
-          entry.target.style.transform = "translateY(0)";
-        }
-      });
-    }, { threshold: 0.1 });
 
-    sections.forEach(section => {
-      section.style.opacity = 0;
-      section.style.transform = "translateY(20px)";
-      section.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-      observer.observe(section);
-    });
-  </script>
+  <!-- JAVASCRIPT -->
+  <script src="app.js"></script>
 
 </body>
-</html>
 
+</html>
